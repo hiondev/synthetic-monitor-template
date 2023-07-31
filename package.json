@@ -1,0 +1,22 @@
+{
+  "name": "generic-synthetic-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "PLAYWRIGHT_BROWSERS_PATH=0 playwright install chromium",
+    "build": "tsc",
+    "start": "functions-framework --target=SyntheticFunction"
+  },
+  "keywords": [],
+  "license": "Apache-2.0",
+  "author": "Google Inc.",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.2.0",
+    "@google-cloud/synthetics-sdk-api": "^0.1.0",
+    "@playwright/test": "^1.36.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
